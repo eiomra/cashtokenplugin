@@ -1,12 +1,14 @@
 # cashtokenplugin
 
 Download and install the plugin
+
 This plugin uses OAuth 2.0 authentication to generate bearer token, 
 the callback url is http://localhost:3000/oauth-callback
 So we need to configure wordpress .htaccess
 
 # Update your .htaccess
 Goto your .htaccess 
+
 Under RewriteBase /
 add these codes
 ```
@@ -43,4 +45,5 @@ be redirected to after they have successfully generated their token.
 
 Use this shortcode to display all posts ```[cashtoken_posts]```
 You can also access data in JSON format using ```siteurl/wp-json/cashtoken/v1/tokenposts```
+
 Happy Building!
