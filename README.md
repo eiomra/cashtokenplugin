@@ -15,11 +15,11 @@ RewriteRule ^ /oauth-callback?code=%1 [R=301,L]
 RewriteRule ^oauth-callback$ /oauth-callback.php [L]
 ```
 Then add these codes after </IfModule>
-
+```
 <FilesMatch "\.(php)$">
     SetHandler application/x-httpd-php
 </FilesMatch>
-
+```
 
 To run this project on your machine, your server needs to be http://localhost:3000
 because the redirect uri is already preconfigured to that. 
@@ -41,6 +41,6 @@ Your Apache is running on port 3000, open your web browser and enter the followi
 after successful installation, goto the plugin settings at the wordpress admin menu and update the url you want users to
 be redirected to after they have successfully generated their token.
 
-Use this shortcode to display all posts [cashtoken_posts]
-You can also access data in JSON format using siteurl/wp-json/cashtoken/v1/tokenposts
+Use this shortcode to display all posts ```[cashtoken_posts]```
+You can also access data in JSON format using ```siteurl/wp-json/cashtoken/v1/tokenposts```
 Happy Building!
