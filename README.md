@@ -16,9 +16,7 @@ RewriteRule ^oauth-callback$ /oauth-callback.php [L]
 
 Then add these codes after </IfModule>
 
-<FilesMatch "\.(php)$">
-    SetHandler application/x-httpd-php
-</FilesMatch>
+<FilesMatch "\.(php)$">    SetHandler application/x-httpd-php    </FilesMatch>
 
 
 To run this project on your machine, your server needs to be http://localhost:3000
