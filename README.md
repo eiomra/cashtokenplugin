@@ -10,6 +10,7 @@ So we need to configure wordpress .htaccess
 Goto your .htaccess 
 
 Under RewriteBase /
+
 add these codes
 ```
 RewriteCond %{THE_REQUEST} /oauth-callback\.php\?code=([^\s&]+) [NC]
