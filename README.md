@@ -14,7 +14,7 @@ RewriteCond %{THE_REQUEST} /oauth-callback\.php\?code=([^\s&]+) [NC]
 RewriteRule ^ /oauth-callback?code=%1 [R=301,L]
 RewriteRule ^oauth-callback$ /oauth-callback.php [L]
 ```
-Then add these codes after </IfModule>
+Then add these codes after ```</IfModule>```
 ```
 <FilesMatch "\.(php)$">
     SetHandler application/x-httpd-php
