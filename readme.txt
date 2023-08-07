@@ -42,5 +42,5 @@ after successful installation, goto the plugin settings at the wordpress admin m
 be redirected to after they have successfully generated their token.
 
 Use this shortcode to display all posts [cashtoken_posts]
-
+You can also access data in JSON format using siteurl/wp-json/cashtoken/v1/tokenposts
 Happy Building!
